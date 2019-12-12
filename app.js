@@ -7,7 +7,7 @@ const app = express();
 const _ = require('lodash');
 const mongoose = require('mongoose');
 
-mongoose.connect("mongodb+srv://admin-ian:Test123@cluster0-20eja.mongodb.net/blogDB", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://admin-ian:Test123@cluster0-20eja.mongodb.net/blogDB", {useNewUrlParser: true, useUnifiedTopology: true});
 
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
